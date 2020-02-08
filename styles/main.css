@@ -57,6 +57,7 @@ main {
   text-decoration: none;
   -webkit-transition: color .75s;
   transition: color .75s;
+  color: inherit;
 }
 
 .sidebar__nav-item > a:visited {
@@ -187,63 +188,63 @@ main {
 }
 
 .projects-page__link:nth-child(1) .projects-page__img {
-  background-image: url("https://picsum.photos/id/834/300");
+  background-image: url("https://picsum.photos/id/787/300");
 }
 
 .projects-page__link:nth-child(2) .projects-page__img {
-  background-image: url("https://picsum.photos/id/123/300");
+  background-image: url("https://picsum.photos/id/886/300");
 }
 
 .projects-page__link:nth-child(3) .projects-page__img {
-  background-image: url("https://picsum.photos/id/508/300");
+  background-image: url("https://picsum.photos/id/912/300");
 }
 
 .projects-page__link:nth-child(4) .projects-page__img {
-  background-image: url("https://picsum.photos/id/57/300");
+  background-image: url("https://picsum.photos/id/810/300");
 }
 
 .projects-page__link:nth-child(5) .projects-page__img {
-  background-image: url("https://picsum.photos/id/484/300");
+  background-image: url("https://picsum.photos/id/926/300");
 }
 
 .projects-page__link:nth-child(6) .projects-page__img {
-  background-image: url("https://picsum.photos/id/699/300");
+  background-image: url("https://picsum.photos/id/653/300");
 }
 
 .projects-page__link:nth-child(7) .projects-page__img {
-  background-image: url("https://picsum.photos/id/206/300");
+  background-image: url("https://picsum.photos/id/631/300");
 }
 
 .projects-page__link:nth-child(8) .projects-page__img {
-  background-image: url("https://picsum.photos/id/942/300");
+  background-image: url("https://picsum.photos/id/556/300");
 }
 
 .projects-page__link:nth-child(9) .projects-page__img {
-  background-image: url("https://picsum.photos/id/678/300");
+  background-image: url("https://picsum.photos/id/951/300");
 }
 
 .projects-page__link:nth-child(10) .projects-page__img {
-  background-image: url("https://picsum.photos/id/331/300");
+  background-image: url("https://picsum.photos/id/713/300");
 }
 
 .projects-page__link:nth-child(11) .projects-page__img {
-  background-image: url("https://picsum.photos/id/611/300");
+  background-image: url("https://picsum.photos/id/205/300");
 }
 
 .projects-page__link:nth-child(12) .projects-page__img {
-  background-image: url("https://picsum.photos/id/283/300");
+  background-image: url("https://picsum.photos/id/281/300");
 }
 
 .projects-page__link:nth-child(13) .projects-page__img {
-  background-image: url("https://picsum.photos/id/849/300");
+  background-image: url("https://picsum.photos/id/147/300");
 }
 
 .projects-page__link:nth-child(14) .projects-page__img {
-  background-image: url("https://picsum.photos/id/610/300");
+  background-image: url("https://picsum.photos/id/176/300");
 }
 
 .projects-page__link:nth-child(15) .projects-page__img {
-  background-image: url("https://picsum.photos/id/627/300");
+  background-image: url("https://picsum.photos/id/732/300");
 }
 
 .projects-page__hover {
@@ -346,59 +347,59 @@ main {
 }
 
 .skills__bar:nth-of-type(1) .skills__bar-percentage {
-  height: 64%;
+  height: 70%;
 }
 
 .skills__bar:nth-of-type(2) .skills__bar-percentage {
-  height: 19%;
+  height: 14%;
 }
 
 .skills__bar:nth-of-type(3) .skills__bar-percentage {
-  height: 85%;
+  height: 33%;
 }
 
 .skills__bar:nth-of-type(4) .skills__bar-percentage {
-  height: 58%;
+  height: 19%;
 }
 
 .skills__bar:nth-of-type(5) .skills__bar-percentage {
-  height: 30%;
+  height: 24%;
 }
 
 .skills__bar:nth-of-type(6) .skills__bar-percentage {
-  height: 63%;
+  height: 77%;
 }
 
 .skills__bar:nth-of-type(7) .skills__bar-percentage {
-  height: 57%;
+  height: 42%;
 }
 
 .skills__bar:nth-of-type(8) .skills__bar-percentage {
-  height: 96%;
+  height: 48%;
 }
 
 .skills__bar:nth-of-type(9) .skills__bar-percentage {
-  height: 17%;
+  height: 96%;
 }
 
 .skills__bar:nth-of-type(10) .skills__bar-percentage {
-  height: 55%;
+  height: 10%;
 }
 
 .skills__bar:nth-of-type(11) .skills__bar-percentage {
-  height: 60%;
+  height: 52%;
 }
 
 .skills__bar:nth-of-type(12) .skills__bar-percentage {
-  height: 40%;
+  height: 31%;
 }
 
 .skills__bar:nth-of-type(13) .skills__bar-percentage {
-  height: 54%;
+  height: 97%;
 }
 
 .skills__bar:nth-of-type(14) .skills__bar-percentage {
-  height: 56%;
+  height: 35%;
 }
 
 .contact-form {
