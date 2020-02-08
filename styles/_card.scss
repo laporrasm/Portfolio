@@ -1,0 +1,48 @@
+.card {
+	position: relative;
+	padding: 2em;
+	background-color: #f0f0f0;
+	border-left: 10px solid $primary-color;
+
+	&__title {
+		font-size: 2rem;
+		margin: 0;
+	}
+
+	&__text {
+		margin-bottom: 2em;
+		margin-top: 2em;
+		line-height: 1.8em;
+		font-size: 1.1rem;
+		color: #454545;
+	}
+
+	&__table-container {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	&__table {
+		width: 40%;
+		text-align: left;
+		border-collapse: collapse;
+		border: 1px solid darken($color: #f0f0f0, $amount: 5);
+	}
+
+	&__table-item {
+		padding: .5em 2em;
+		border: 1px solid darken($color: #f0f0f0, $amount: 5);
+
+		&:first-child {
+			width: 30%;
+			text-align: center;
+			background-color: $primary-color;
+			color: white;
+		}
+
+		&:last-child {
+			width: 70%;
+			color: #454545;
+		}
+	}
+}

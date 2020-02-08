@@ -1,0 +1,34 @@
+.sidebar {
+	grid-area: aside;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #1d1d1d;
+
+	&__nav-list {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+
+	&__nav-item {
+		margin-bottom: 2em;
+		text-align: center;
+		font-size: 1.3rem;
+		color: $primary-color;
+
+		> a {
+			text-decoration: none;
+			transition: color .75s;
+			&:visited {
+				color: inherit;
+			}
+
+			&:hover {
+				color: darken($color: $primary-color, $amount: 20%);
+				transition: color .75s;
+			}
+		}
+	}
+}

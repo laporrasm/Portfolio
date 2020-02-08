@@ -1,0 +1,47 @@
+.skills {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: 1fr 5fr .5fr 1fr 5fr .5fr;
+	row-gap: .75em;
+	align-items: center;
+	justify-items: center;
+
+	&__name {
+		margin: 0;
+		text-align: center;
+	}
+
+	&__type {
+		grid-column-start: 1;
+		grid-column-end: 8;
+		margin: 0;
+		font-size: 2rem;
+	}
+
+	&__bar {
+		width: 100%;
+		height: 100%;
+		background-color: $primary-color;
+	}
+
+	&__bar-percentage {
+		width: 100%;
+		height: 50%;
+		background-color: #f0f0f0;
+	}
+}
+
+@function randomNum($min, $max) {
+  $rand: random();
+  $randomNum: $min + floor($rand * (($max - $min) + 1));
+
+  @return $randomNum;
+}
+
+@for $i from 1 through 14 {
+	.skills__bar:nth-of-type(#{$i}) {
+		.skills__bar-percentage {
+			height: randomNum(10,100)+%;
+		}
+	}
+}

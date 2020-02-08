@@ -1,20 +1,19 @@
+$main-font: 'Nunito', sans-serif;
+$title-font: 'Montserrat',sans-serif;
+
+$primary-color: #0090FF;
+
 body {
 	margin: 0;
+	font-family: $main-font;
 }
 
 .wrapper {
 	height: 100vh;
 	display: grid;
-	grid-template-columns: 1fr 3fr;
-	grid-template-rows: 9fr 1fr;
+	grid-template-columns: 1fr 6fr;
 	grid-template-areas:
-		"aside main"
-		"aside footer";
-}
-
-aside {
-	grid-area: aside;
-	align-self: center;
+		"aside main";
 }
 
 main {
@@ -23,14 +22,12 @@ main {
 	scroll-behavior: smooth;
 }
 
-footer {
-	grid-area: footer;
-}
-
-ul {
-	list-style-type: none;
-}
-
-section {
-	height: 100%;
-}
+@import "sidebar";
+@import "home-page";
+@import "about-page";
+@import "card";
+@import "projects-page";
+@import "abilities-page";
+@import "skills";
+@import "contact-form";
+@import "footer";
