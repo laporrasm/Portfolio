@@ -1,3 +1,5 @@
+$bg-colors: #011f4b, #03396c, #005b96, #6497b1, #b3cde0;
+
 .projects-page {
 	height: 100vh;
 	display: grid;
@@ -17,7 +19,7 @@
 
 		@for $i from 1 through 15 {
 			.projects-page__link:nth-child(#{$i}) & {
-				background-image: url("https://picsum.photos/id/#{floor(random()*1000)}/300");
+				background-color: nth($bg-colors, random(5));
 			}
 		}
 	}

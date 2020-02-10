@@ -1,47 +1,30 @@
 .skills {
 	display: grid;
-	grid-template-columns: repeat(7, 1fr);
-	grid-template-rows: 1fr 5fr .5fr 1fr 5fr .5fr;
-	row-gap: .75em;
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: 1.5em;
+	row-gap: 3em;
 	align-items: center;
 	justify-items: center;
 
+	&__card {
+		width: 100%;
+		text-align: center;
+		box-shadow: 0px 5px 10px 1px rgba($color: #000000, $alpha: .2);
+	}
+
 	&__name {
 		margin: 0;
-		text-align: center;
+		padding-bottom: 1em;
+		padding-top: 1em;
+		font-size: 1.5rem;
+		color: #454545;
 	}
 
-	&__type {
-		grid-column-start: 1;
-		grid-column-end: 8;
-		margin: 0;
-		font-size: 2rem;
-	}
-
-	&__bar {
-		width: 100%;
-		height: 100%;
-		background-color: $primary-color;
-	}
-
-	&__bar-percentage {
-		width: 100%;
-		height: 50%;
-		background-color: #f0f0f0;
-	}
-}
-
-@function randomNum($min, $max) {
-  $rand: random();
-  $randomNum: $min + floor($rand * (($max - $min) + 1));
-
-  @return $randomNum;
-}
-
-@for $i from 1 through 14 {
-	.skills__bar:nth-of-type(#{$i}) {
-		.skills__bar-percentage {
-			height: randomNum(10,100)+%;
-		}
+	&__icon {
+		padding-bottom: .25em;
+		padding-top: .25em;
+		font-size: 4rem;
+		color: white;
+		background-color: #2e96e6;
 	}
 }
