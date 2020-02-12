@@ -51,15 +51,16 @@
 				<section id="home" class="home-page">
 					<div class="home-page__cover"></div>
 					<h1 class="home-page__title">Hello, I am <br>Leonardo Porras</h1>
-					<p class="home-page__subtitle">I will help you build the website of your dreams.</p>
+					<p class="home-page__subtitle">I want to help you build the website of your dreams.</p>
 					<div class="home-page__cta"><a href="#about"><button>CONTINUE</button></a></div>
 				</section>
 
 				<section id="about" class="about-page">
 					<h2 class="about-page__title">About Me</h2>
 					<div class="card">
-						<h3 class="card__title">I am a Front-End Web Developer...</h3>
-						<p class="card__text">
+						<div>
+							<h3 class="card__title">I am a Front-End Web Developer from Lima, Per&uacute;</h3>
+							<p class="card__text">
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
 							cumque accusamus neque sunt itaque quis eveniet, ab dicta
 							consectetur rem numquam cum praesentium alias impedit, deserunt
@@ -69,7 +70,8 @@
 							repudiandae, dignissimos nihil placeat consectetur? Amet, facilis.
 							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor quam quasi laborum facere tempora modi unde exercitationem voluptatem earum! Reprehenderit necessitatibus nemo mollitia debitis enim laudantium, maiores officia cupiditate voluptate!
 						</p>
-						<div class="card__table-container">
+					</div>
+						<!-- <div class="card__table-container">
 							<table class="card__table">
 								<tr>
 									<td class="card__table-item">Name</td>
@@ -109,7 +111,8 @@
 									<td class="card__table-item">01/30/99</td>
 								</tr>
 							</table>
-						</div>
+						</div> -->
+						<figure class="card__img"><img src="./images/Me.jpg" alt="Me"></figure>
 					</div>
 				</section>
 
@@ -242,35 +245,59 @@
 
 						<div class="skills__card">
 							<div class="skills__icon"><i class="fab fa-html5"></i></div>
-							<h3 class="skills__name">HTML5</h3>
+							<div class="skills__text">
+								<h3>HTML5</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, recusandae.</p>
+							</div>
 						</div>
 						<div class="skills__card">
 							<div class="skills__icon"><i class="fab fa-css3-alt"></i></div>
-							<h3 class="skills__name">CSS3</h3>
+							<div class="skills__text">
+								<h3>CSS3</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, recusandae.</p>
+							</div>
 						</div>
 						<div class="skills__card">
 							<div class="skills__icon"><i class="fab fa-sass"></i></div>
-							<h3 class="skills__name">SASS</h3>
+							<div class="skills__text">
+								<h3>SASS</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, recusandae.</p>
+							</div>
 						</div>
 						<div class="skills__card">
 							<div class="skills__icon"><i class="fab fa-js"></i></div>
-							<h3 class="skills__name">Javascript</h3>
+							<div class="skills__text">
+								<h3>Javascript</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, recusandae.</p>
+							</div>
 						</div>
 						<div class="skills__card">
 							<div class="skills__icon"><i class="fab fa-git-alt"></i></div>
-							<h3 class="skills__name">Git</h3>
+							<div class="skills__text">
+								<h3>Git</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, recusandae.</p>
+							</div>
 						</div>
 						<div class="skills__card">
 							<div class="skills__icon"><i class="fab fa-react"></i></div>
-							<h3 class="skills__name">React</h3>
+							<div class="skills__text">
+								<h3>React</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, recusandae.</p>
+							</div>
 						</div>
 						<div class="skills__card">
 							<div class="skills__icon"><i class="fab fa-vuejs"></i></div>
-							<h3 class="skills__name">Vue.js</h3>
+							<div class="skills__text">
+								<h3>Vue.js</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, recusandae.</p>
+							</div>
 						</div>
 						<div class="skills__card">
 							<div class="skills__icon"><i class="fab fa-node"></i></div>
-							<h3 class="skills__name">NodeJS</h3>
+							<div class="skills__text">
+								<h3>Node.js</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, recusandae.</p>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -278,27 +305,35 @@
 				<section id="contact" class="contact-form">
 					<h2 class="contact-form__title">Contact Me</h2>
 					<form action="#" class="contact-form__content">
+						<label class="contact-form__label" for="name">Full Name</label>
 						<input
 							class="contact-form__input"
+							id="name"
 							type="text"
 							placeholder="Full Name"
 							pattern="[A-Za-z]+"
 							required
 						/>
+						<label class="contact-form__label" for="email">Email</label>
 						<input
 							class="contact-form__input"
+							id="email"
 							type="email"
 							placeholder="Email"
 							required
 						/>
+						<label class="contact-form__label" for="subject">Subject</label>
 						<input
 							class="contact-form__input"
+							id="subject"
 							type="text"
 							placeholder="Subject"
 							required
 						/>
+						<label class="contact-form__label" for="message">Message</label>
 						<textarea
 							class="contact-form__textarea"
+							id="message"
 							cols="30"
 							rows="5"
 							placeholder="Your Message"

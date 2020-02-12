@@ -7,8 +7,8 @@ body {
   height: 100vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 6fr;
-      grid-template-columns: 1fr 6fr;
+  -ms-grid-columns: 1fr 9fr;
+      grid-template-columns: 1fr 9fr;
       grid-template-areas: "aside main";
 }
 
@@ -105,7 +105,7 @@ main {
           justify-content: center;
   padding-left: 4em;
   text-align: left;
-  background-image: url("../images/Wallpaper.jpg");
+  background-image: url("../images/Wallpaper2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -163,6 +163,7 @@ main {
 .about-page {
   height: 100%;
   padding: 3em;
+  background-color: #f0f0f0;
 }
 
 .about-page__title {
@@ -171,23 +172,32 @@ main {
 }
 
 .card {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 2em;
-  background-color: #f0f0f0;
-  border-left: 10px solid #0090FF;
+  background-color: white;
 }
 
 .card__title {
-  font-size: 2rem;
   margin: 0;
+  font-size: 2rem;
+  opacity: .8;
 }
 
 .card__text {
-  margin-bottom: 2em;
-  margin-top: 2em;
-  line-height: 1.8em;
+  margin-bottom: 1.5em;
+  margin-top: 1.5emem;
+  line-height: 1.5em;
   font-size: 1.1rem;
-  color: #454545;
+  opacity: .5;
+}
+
+.card__img img {
+  max-width: 561px;
 }
 
 .card__table-container {
@@ -245,11 +255,11 @@ main {
 }
 
 .projects-page__link:nth-child(1) .projects-page__img {
-  background-color: #005b96;
+  background-color: #011f4b;
 }
 
 .projects-page__link:nth-child(2) .projects-page__img {
-  background-color: #005b96;
+  background-color: #03396c;
 }
 
 .projects-page__link:nth-child(3) .projects-page__img {
@@ -257,15 +267,15 @@ main {
 }
 
 .projects-page__link:nth-child(4) .projects-page__img {
-  background-color: #011f4b;
+  background-color: #b3cde0;
 }
 
 .projects-page__link:nth-child(5) .projects-page__img {
-  background-color: #011f4b;
+  background-color: #03396c;
 }
 
 .projects-page__link:nth-child(6) .projects-page__img {
-  background-color: #011f4b;
+  background-color: #b3cde0;
 }
 
 .projects-page__link:nth-child(7) .projects-page__img {
@@ -273,35 +283,35 @@ main {
 }
 
 .projects-page__link:nth-child(8) .projects-page__img {
-  background-color: #03396c;
-}
-
-.projects-page__link:nth-child(9) .projects-page__img {
-  background-color: #6497b1;
-}
-
-.projects-page__link:nth-child(10) .projects-page__img {
-  background-color: #03396c;
-}
-
-.projects-page__link:nth-child(11) .projects-page__img {
-  background-color: #b3cde0;
-}
-
-.projects-page__link:nth-child(12) .projects-page__img {
   background-color: #005b96;
 }
 
-.projects-page__link:nth-child(13) .projects-page__img {
+.projects-page__link:nth-child(9) .projects-page__img {
   background-color: #03396c;
 }
 
-.projects-page__link:nth-child(14) .projects-page__img {
+.projects-page__link:nth-child(10) .projects-page__img {
+  background-color: #b3cde0;
+}
+
+.projects-page__link:nth-child(11) .projects-page__img {
+  background-color: #03396c;
+}
+
+.projects-page__link:nth-child(12) .projects-page__img {
   background-color: #011f4b;
 }
 
-.projects-page__link:nth-child(15) .projects-page__img {
+.projects-page__link:nth-child(13) .projects-page__img {
   background-color: #b3cde0;
+}
+
+.projects-page__link:nth-child(14) .projects-page__img {
+  background-color: #b3cde0;
+}
+
+.projects-page__link:nth-child(15) .projects-page__img {
+  background-color: #011f4b;
 }
 
 .projects-page__hover {
@@ -357,6 +367,7 @@ main {
 .abilities-page {
   height: 100vh;
   padding: 3rem;
+  background-color: #f0f0f0;
 }
 
 .abilities-page__title {
@@ -369,8 +380,8 @@ main {
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  -webkit-column-gap: 1.5em;
-          column-gap: 1.5em;
+  -webkit-column-gap: 3em;
+          column-gap: 3em;
   row-gap: 3em;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -383,22 +394,61 @@ main {
   text-align: center;
   -webkit-box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.2);
+  background-color: white;
 }
 
-.skills__name {
+.skills__text {
+  padding: 0 1em 1em;
+}
+
+.skills__text h3 {
   margin: 0;
-  padding-bottom: 1em;
-  padding-top: 1em;
+  margin-bottom: .5em;
   font-size: 1.5rem;
-  color: #454545;
+}
+
+.skills__text p {
+  margin: 0;
+  opacity: .5;
+  text-align: left;
+  font-size: .9rem;
 }
 
 .skills__icon {
-  padding-bottom: .25em;
   padding-top: .25em;
   font-size: 4rem;
-  color: white;
-  background-color: #2e96e6;
+}
+
+.skills__card:nth-child(1) .skills__icon {
+  color: #de4b25;
+}
+
+.skills__card:nth-child(2) .skills__icon {
+  color: #3b9adb;
+}
+
+.skills__card:nth-child(3) .skills__icon {
+  color: #cd6799;
+}
+
+.skills__card:nth-child(4) .skills__icon {
+  color: #f7e018;
+}
+
+.skills__card:nth-child(5) .skills__icon {
+  color: black;
+}
+
+.skills__card:nth-child(6) .skills__icon {
+  color: #61dbfb;
+}
+
+.skills__card:nth-child(7) .skills__icon {
+  color: #3fb984;
+}
+
+.skills__card:nth-child(8) .skills__icon {
+  color: black;
 }
 
 .contact-form {
@@ -412,18 +462,33 @@ main {
 }
 
 .contact-form__content {
+  width: 75%;
+  margin: 0 auto;
   text-align: center;
 }
 
+.contact-form__label {
+  display: block;
+  margin-bottom: .5em;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.contact-form__label::after {
+  content: " *";
+  color: red;
+  display: inline;
+}
+
 .contact-form__input, .contact-form__textarea {
-  width: 75%;
-  margin-bottom: 2em;
+  width: 100%;
+  margin-bottom: 1em;
   padding: 1em;
   border: none;
   outline: none;
   border-left: 5px solid white;
-  -webkit-box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.02);
-          box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.02);
+  background-color: rgba(0, 0, 0, 0.05);
   font-family: "Nunito", sans-serif;
   font-size: 1.1rem;
 }

@@ -1,20 +1,27 @@
 .card {
-	position: relative;
+	display: flex;
+	align-items: center;
 	padding: 2em;
-	background-color: #f0f0f0;
-	border-left: 10px solid $primary-color;
+	background-color: white;
 
 	&__title {
-		font-size: 2rem;
 		margin: 0;
+		font-size: 2rem;
+		opacity: .8;
 	}
 
 	&__text {
-		margin-bottom: 2em;
-		margin-top: 2em;
-		line-height: 1.8em;
+		margin-bottom: 1.5em;
+		margin-top: 1.5emem;
+		line-height: 1.5em;
 		font-size: 1.1rem;
-		color: #454545;
+		opacity: .5;
+	}
+
+	&__img {
+		img {
+			max-width: 561px;
+		}
 	}
 
 	&__table-container {
