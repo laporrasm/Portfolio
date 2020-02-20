@@ -44,17 +44,10 @@
 			padding: .75em 3em;
 			border: 2px solid $primary-color;
 			outline: none;
-			background-color: unset;
+			background-color: $primary-color;
+			color: white;
 			font-weight: bold;
-			color: $primary-color;
 			cursor: pointer;
-			transition: .5s background-color, .5s color;
-
-			&:hover {
-				background-color: $primary-color;
-				color: white;
-				transition: 1s background-color, 1s color;
-			}
 		}
 	}
 }
